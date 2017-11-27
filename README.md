@@ -3,7 +3,7 @@
  * NSArray + runtime    这个类目里主要提到了动态方法解析 和 方法重定向，以及消息转发
  * DYModel 、DYSubModel 提到了 给父类添加一个新实现 做方法替换等
 ## 知识点
-*+ (BOOL)resolveInstanceMethod:(SEL)sel  方法解析返回值为Bool 如果返回是yes则直接进入消息处理 如果是no的话就进入下一项- (id)forwardingTargetForSelector:(SEL)aSelector
+* + (BOOL)resolveInstanceMethod:(SEL)sel  方法解析返回值为Bool 如果返回是yes则直接进入消息处理 如果是no的话就进入下一项- (id)forwardingTargetForSelector:(SEL)aSelector
 * - (id)forwardingTargetForSelector:(SEL)aSelector  方法的重定向  在消息转发机制执行前，Runtime 系统会再给我们一次偷梁换柱的机会，即通过重载- (id)forwardingTargetForSelector:(SEL)aSelector方法替换消息的接受者为其他对象
 * - (NSMethodSignature *)methodSignatureForSelector:(SEL)aSelector  方法签名 在forwardInvocation:消息发送前，Runtime系统会向对象发送methodSignatureForSelector:消息，并取到返回的方法签名用于生成NSInvocation对象
 * - (void)forwardInvocation:(NSInvocation *)anInvocation 当动态方法解析不作处理返回NO时，且重定向也为处理时消息转发机制会被触发。在这时forwardInvocation:方法会被执行
