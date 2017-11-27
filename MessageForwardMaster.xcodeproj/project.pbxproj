@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7E21971B1FC7C531006BDCFF /* DYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E21971A1FC7C531006BDCFF /* DYModel.m */; };
+		7E21971E1FC7C53F006BDCFF /* DYSubModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E21971D1FC7C53F006BDCFF /* DYSubModel.m */; };
+		7E2197221FC7CFA8006BDCFF /* NSObject+runtime.m in Sources */ = {isa = PBXBuildFile; fileRef = 7E2197211FC7CFA7006BDCFF /* NSObject+runtime.m */; };
 		7EF157761FC4311E00093920 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF157751FC4311E00093920 /* AppDelegate.m */; };
 		7EF157791FC4311E00093920 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7EF157781FC4311E00093920 /* ViewController.m */; };
 		7EF1577C1FC4311E00093920 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7EF1577A1FC4311E00093920 /* Main.storyboard */; };
@@ -17,6 +20,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7E2197191FC7C531006BDCFF /* DYModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYModel.h; sourceTree = "<group>"; };
+		7E21971A1FC7C531006BDCFF /* DYModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYModel.m; sourceTree = "<group>"; };
+		7E21971C1FC7C53F006BDCFF /* DYSubModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYSubModel.h; sourceTree = "<group>"; };
+		7E21971D1FC7C53F006BDCFF /* DYSubModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYSubModel.m; sourceTree = "<group>"; };
+		7E21971F1FC7C6E6006BDCFF /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7E2197201FC7CFA7006BDCFF /* NSObject+runtime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+runtime.h"; sourceTree = "<group>"; };
+		7E2197211FC7CFA7006BDCFF /* NSObject+runtime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+runtime.m"; sourceTree = "<group>"; };
 		7EF157711FC4311E00093920 /* MessageForwardMaster.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MessageForwardMaster.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7EF157741FC4311E00093920 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7EF157751FC4311E00093920 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -65,13 +75,20 @@
 				7EF157751FC4311E00093920 /* AppDelegate.m */,
 				7EF157771FC4311E00093920 /* ViewController.h */,
 				7EF157781FC4311E00093920 /* ViewController.m */,
+				7E2197191FC7C531006BDCFF /* DYModel.h */,
+				7E21971A1FC7C531006BDCFF /* DYModel.m */,
+				7E21971C1FC7C53F006BDCFF /* DYSubModel.h */,
+				7E21971D1FC7C53F006BDCFF /* DYSubModel.m */,
 				7EF157901FC4324D00093920 /* NSArray+runtime.h */,
 				7EF157911FC4324D00093920 /* NSArray+runtime.m */,
+				7E2197201FC7CFA7006BDCFF /* NSObject+runtime.h */,
+				7E2197211FC7CFA7006BDCFF /* NSObject+runtime.m */,
 				7EF1577A1FC4311E00093920 /* Main.storyboard */,
 				7EF1577D1FC4311E00093920 /* Assets.xcassets */,
 				7EF1577F1FC4311E00093920 /* LaunchScreen.storyboard */,
 				7EF157821FC4311E00093920 /* Info.plist */,
 				7EF157831FC4311E00093920 /* main.m */,
+				7E21971F1FC7C6E6006BDCFF /* PrefixHeader.pch */,
 			);
 			path = MessageForwardMaster;
 			sourceTree = "<group>";
@@ -148,9 +165,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				7EF157791FC4311E00093920 /* ViewController.m in Sources */,
+				7E21971B1FC7C531006BDCFF /* DYModel.m in Sources */,
 				7EF157841FC4311E00093920 /* main.m in Sources */,
 				7EF157761FC4311E00093920 /* AppDelegate.m in Sources */,
+				7E2197221FC7CFA8006BDCFF /* NSObject+runtime.m in Sources */,
 				7EF157921FC4324D00093920 /* NSArray+runtime.m in Sources */,
+				7E21971E1FC7C53F006BDCFF /* DYSubModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +306,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D47CZT3KBD;
+				GCC_PREFIX_HEADER = MessageForwardMaster/PrefixHeader.pch;
 				INFOPLIST_FILE = MessageForwardMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.MessageForwardMaster;
@@ -300,6 +321,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = D47CZT3KBD;
+				GCC_PREFIX_HEADER = MessageForwardMaster/PrefixHeader.pch;
 				INFOPLIST_FILE = MessageForwardMaster/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.wxx.MessageForwardMaster;

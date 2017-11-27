@@ -7,6 +7,8 @@
 //
 
 #import "ViewController.h"
+#import "DYSubModel.h"
+#import "NSObject+runtime.h"
 
 @interface ViewController ()
 
@@ -16,7 +18,10 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+    DYSubModel *subModel = [[DYSubModel alloc] init];
+    [subModel work];
+    
+    NSLog(@"%@",subModel.allMethod);
 }
 //模拟方法找不到的情况
 - (IBAction)testOne:(id)sender {

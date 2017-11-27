@@ -7,7 +7,6 @@
 //
 
 #import "NSArray+runtime.h"
-#import <objc/runtime.h>
 
 @implementation NSArray (runtime)
 
